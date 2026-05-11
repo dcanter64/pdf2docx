@@ -1,22 +1,33 @@
-# files
+# Python files
 *.pyc
+__pycache__/
+.venv/
+*.egg-info/
+
+# Image files
 *.jp*g
+*.png
+
+# Layout and config files
 layout.json
 .vscode/
 
-# pdf testing files
+# PDF and DOCX files (user documents)
 *.pdf
+*.docx
 !demo*.pdf
 *coverage*
 
+# Working directories
+input-pdfs/
+output-docx/
+
+# Test outputs
 test/issues/
 test/features/
 test/outputs/
 
-diff.png
-
-# building dir
+# Building artifacts
 build/
 dist/
-*egg-info/
 pdf2docx*.rst
